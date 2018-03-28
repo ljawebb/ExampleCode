@@ -34,9 +34,11 @@ struct bst {
 };
 typedef struct bst bst;
 
+/* Initialise tree */
 bst* bst_init(int sz,
               int(*comp)(const void* a, const void* b),
               char*(*prnt)(const void* a)  );
+
 /* Insert 1 item into the tree */
 void bst_insert(bst* b, void* v);
 
